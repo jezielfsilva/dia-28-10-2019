@@ -3,12 +3,25 @@
     <head>
         <meta charset="utf-8">
         <title>exercício de hoje</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
     <body>
-        <main>
-            <form>
-                <input >
+        <main class="main-box">
+            <form class="container-form" onsubmit="render (event)">
+                <label for=".title">digitar título</label>
+                <input class="title" type="text">
+                <label for=".paragraph">digitar texto</label>
+                <input class="paragraph" type="text">
+                <label for=".Photograph">colocar uma foto</label>
+                <input class="Photograph" type="url">
+                <button class="click">render</button>
             </form>
+            <Section class="container-appear">
+                <h1 class="ins-title"></h1>
+                <p class="ins-text"></p>
+                <img class="ins-photo">
+            </Section>
         </main>
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>
